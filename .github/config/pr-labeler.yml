@@ -1,0 +1,5 @@
+feature: ['feature/*', 'feat/*']
+fix: ['fix/*', 'bug/*']
+documentation: ['doc/*', 'document/*', 'documentation/*']
+chore: chore/*
+fixed-branch: fixed-branch-name
