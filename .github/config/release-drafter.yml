@@ -32,14 +32,14 @@ template: |
 autolabeler:
   - label: 'documentation'
     branch:
-      - '/doc\/.+/'
+      - '\/doc[\w]*\/'
   - label: 'bug'
     branch:
-      - '/bug\/.+/'
-      - '/fix\/.+/'
+      - '\/bug[\w]*\/'
+      - '\/fix[\w]*\/'
   - label: 'feature'
     branch:
-      - '/feat\/.+/'
+      - '\/feat[\w]*\/'
   - label: 'enhancement'
     branch:
-      - '/enhance\/.+/'
+      - '\/enhance[\w]*\/'
