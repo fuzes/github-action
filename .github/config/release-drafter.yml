@@ -31,7 +31,7 @@ template: |
   $CHANGES
 autolabeler:
   - label: 'documentation'
-    branc:
+    branch:
       - 'doc[\w]*\/'
   - label: 'bug'
     branch:
