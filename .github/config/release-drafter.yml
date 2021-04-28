@@ -29,17 +29,33 @@ template: |
   ## Changes
 
   $CHANGES
+#autolabeler:
+#  - label: 'documentation'
+#    branch:
+#      - '\/doc[\w]*\/'
+#  - label: 'bug'
+#    branch:
+#      - '\/bug[\w]*\/'
+#      - '\/fix[\w]*\/'
+#  - label: 'feature'
+#    branch:
+#      - '\/feat[\w]*\/'
+#  - label: 'enhancement'
+#    branch:
+#      - '\/enhance[\w]*\/'
 autolabeler:
-  - label: 'documentation'
+  - label: 'chore'
+    files:
+      - '*.md'
     branch:
-      - '\/doc[\w]*\/'
+      - '/docs{0,1}\/.+/'
   - label: 'bug'
     branch:
-      - '\/bug[\w]*\/'
-      - '\/fix[\w]*\/'
-  - label: 'feature'
-    branch:
-      - '\/feat[\w]*\/'
+      - '/fix\/.+/'
+    title:
+      - '/fix/i'
   - label: 'enhancement'
     branch:
-      - '\/enhance[\w]*\/'
+      - '/feature\/.+/'
+    body:
+      - '/JIRA-[0-9]{1,4}/'
